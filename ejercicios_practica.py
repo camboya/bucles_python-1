@@ -34,6 +34,28 @@ def ej1():
     Tener en cuenta que "range" no incluye el número de "fin" en su secuencia,
     sino que va hasta el anterior
     '''
+    numero_1 =int(input('Ingrese el numero inicial:'))
+    numero_2 =int(input('Ingrese el numero final:'))
+    numeros_ = [numero_1, numero_2]
+    
+
+    for numeros_ in range(1,6):
+       print(numeros_)
+    
+    sumatoria = 0
+    numero = [1,2,3,4,5]
+    for i in range (0, len (numero)):
+        sumatoria += numero [i]    
+        print("la suma de los numeros desde 0 a sumatoria es:", sumatoria)
+
+    i = 0
+    for i in numero:
+        sumatoria += i
+        i += 1
+
+    promedio = sumatoria / i
+    print('el promedio  es:', promedio)
+       
 
     # inicio = ....
     # fin = ....
@@ -63,6 +85,40 @@ def ej2():
     alguno de lo soportados o no es la palabra "FIN"
     '''
 
+    print("Ingrese numero 4:")
+    numero_4 = int(input())
+    print("ingrese numero 4:",numero_4)
+
+    print("Ingrese numero 5:")
+    numero_5 = int(input())
+    print("ingrese numero 5:",numero_5)
+
+    if (numero_4 >= 0) or (numero_5 >= 0):
+        suma = numero_4 + numero_5
+        print('La suma entre {} y {} es {}'.format(numero_4, numero_5, suma))
+
+    if (numero_4 >= 0) or (numero_5>= 0):
+        resta = numero_4 - numero_5
+        print('La resta entre {} y {} es {}'.format(numero_4, numero_5, resta))
+
+    if (numero_4 >= 0) or (numero_5>= 0):
+        multiplicacion = numero_4 * numero_5
+        print('La multiplicacion entre {} y {} es {}'.format(numero_4, numero_5, multiplicacion))
+
+    if (numero_4 >= 0) or (numero_5>= 0):
+        division = numero_4 / numero_5
+        print('La division entre {} y {} es {}'.format(numero_4, numero_5, division))
+
+    if (numero_4 >= 0) or (numero_5>= 0):
+        exponente = numero_4 ** numero_5
+        print('El exponente entre {} y {} es {}'.format(numero_4, numero_5, exponente))
+    
+    while True:   
+       if (numero_4 >= 7) or (numero_5 >= 8):
+         break   # Salgo del bucle!
+         print('Este es el final')
+    
+
 
 def ej3():
     print("Mi organizador académico (#_#)")
@@ -88,10 +144,10 @@ def ej3():
 
     # Para calcular el promedio primero debe obtener la suma
     # de todas las notas, que irá almacenando en esta variable
-    sumatoria = 0           # Ya le hemos inicializado en 0
+              # Ya le hemos inicializado en 0
 
-    cantidad_notas = 0      # Aquí debe contar cuantas notas válidas encontró
-    cantidad_ausentes = 0   # Aquí debe contar cuantos ausentes hubo
+          # Aquí debe contar cuantas notas válidas encontró
+       # Aquí debe contar cuantos ausentes hubo
 
     # Realice aquí el bucle para recorrer todas las notas
     # y cacular la sumatoria
@@ -103,6 +159,72 @@ def ej3():
     # a calificación con letras, imprima en pantalla el resultado
 
     # Imprima en pantalla al cantidad de ausentes
+
+    sumatoria = 0
+    cantidad_notas = 0
+    cantidad_ausentes = 0
+
+
+
+    puntaje = 70
+    print('ingrese calificacion 1:')
+    calificacion_1 = int(input())
+    print("ingrese calificacion 1:",calificacion_1)
+
+    print('ingrese calificacion 2:')
+    calificacion_2 = int(input())
+    print("ingrese calificacion 2:",calificacion_2)
+
+    print('ingrese calificacion 3:')
+    calificacion_3 = int(input())
+    print("ingrese calificacion 3:",calificacion_3)
+
+    print('ingrese calificacion 4:')
+    calificacion_4 = int(input())
+    print("ingrese calificacion 4:",calificacion_4)
+
+    print('ingrese calificacion 5:')
+    calificacion_5 = int(input())
+    print("ingrese calificacion 5:",calificacion_5)
+
+    if puntaje <= calificacion_1:
+     print('A')
+    
+    if puntaje <= calificacion_2:
+     print('B')
+
+    if puntaje >= calificacion_3:
+     print('C')
+
+    if puntaje >= calificacion_4:
+     print('D')
+
+    if calificacion_5 < puntaje:
+     print('F')
+
+
+    sumatoria = 0
+    notastotales_ = [calificacion_1,calificacion_2,calificacion_3,calificacion_4,calificacion_5]
+
+    for elemento in notastotales_:
+        sumatoria += elemento    
+        print("la suma de las calificaciones desde 0 a sumatoria es:", sumatoria)
+
+ 
+    sumatoria = calificacion_1 + calificacion_2 + calificacion_3 + calificacion_4 + calificacion_5
+
+    promedio = sumatoria / 5
+    print('el promedio  es:', promedio)
+
+    if promedio >=70:
+        print('C')
+    else:
+        print('D')
+
+    
+
+    
+   
 
 
 def ej4():
@@ -137,13 +259,84 @@ def ej4():
     durante la clase (ejemplos_clase)
     '''
 
+
+    # Colocar el bucle aqui......
     temperatura_max = None      # Aquí debe ir almacenando la temp máxima
     temperatura_min = None      # Aquí debe ir almacenando la temp mínima
     temperatura_sumatoria = 0   # Aquí debe ir almacenando la suma de todas las temp
     temperatura_promedio = 0    # Al finalizar el loop deberá aquí alamcenar el promedio
-    temperatura_len = 0         # Aquí debe almacenar cuantas temperatuas hay en la lista
+    temperatura_len = 0         # Aquí debe almacenar cuantas temperatuas hay en   la lista
+    temp_dataloger = [12.8, 18.6, 14.5, 20.8, 12.1, 21.2, 13.5, 18.6,14.7, 19.6, 11.2, 18.4]
 
-    # Colocar el bucle aqui......
+   
+
+    suma = 0
+    i = 0
+
+    temperatura_max = max(temp_dataloger)
+    print("temperatura maxima = ", temperatura_max)
+
+    temperatura_min = min(temp_dataloger)
+    print('temperatura minima = ', temperatura_min )
+
+    for i in range(0, len(temp_dataloger)):
+        temperatura_sumatoria += temp_dataloger[i]   
+        print( "sumatoria de temperaturas =", temperatura_sumatoria)
+
+
+    for elemento in temp_dataloger:
+       suma += elemento
+       i += 1
+
+    temperatura_promedio = suma / i
+    print('la temperatura promedio es', temperatura_promedio)
+
+    print(len(temp_dataloger))
+
+
+    temperatura_sumatoria = sum(temp_dataloger)
+    print("sumatoria de temperaturas = ", temperatura_sumatoria)
+
+    verano = 0
+    otoño = 0
+    invierno = 0
+    primavera = 0
+    temperaturaverano_minima = 19
+    temperaturaverano_maxima = 28
+    temperaturasverano_ = (temperaturaverano_minima, temperaturaverano_maxima)
+    
+    temperaturaotoño_minima = 11
+    temperaturaotoño_maxima = 24
+    temperaturasotoño_ = (temperaturaotoño_minima, temperaturaotoño_maxima)
+
+    temperaturainvierno_minima = 8
+    temperaturainvierno_maxima = 14
+    temperaturasinvierno_ = (temperaturainvierno_minima, temperaturainvierno_maxima)
+
+    temperaturaprimavera_minima = 10
+    temperaturaprimavera_maxima = 24
+    temperaturasprimavera_ = (temperaturaprimavera_minima, temperaturaprimavera_maxima)
+
+    print('Ingrese temperatura minima de hoy:')
+    temperaturaminima_hoy = float(input())
+    print('temperatura ingresada:', temperaturaminma_hoy)
+
+    print('Ingrese temperatura maxima de hoy:')
+    temperaturamaxima_hoy = float(input())
+    print('temperatura ingresada:', temperaturamaxima_hoy)
+
+    if temperaturaminima_hoy <= temperaturasverano_ and temperaturamaxima_hoy <= temperaturasverano_:
+       print('la estacion es verano', verano)
+    elif temperaturaminima_hoy <= temperaturasotoño_ and temperaturamaxima_hoy <= temperaturasotoño:
+       print('la estacion es otoño', otoño)
+    if temperaturaminima_hoy <= temperaturasprimavera_ and temperaturamaxima_hoy <= temperaturasprimavera_:
+       print('la estacion es primavera', primavera)
+    elif temperaturaminima_hoy <= temperaturasinvierno_ and temperaturamaxima_hoy <= temperaturasinvierno_:
+        print('la estacion es invierno', invierno)
+    
+
+
+    
 
     # Al finalizar el bucle compare si el valor que usted calculó para
     # temperatura_max y temperatura_min coincide con el que podría calcular
@@ -247,10 +440,38 @@ def ej5():
   '''
 
 
+
+print('Ingrese palabra 1: ')
+    palabra_1 = str(input())
+    print('palabra ingresada:', palabra_1)
+
+    print('Ingrese palabra 2:')
+    palabra_2 = str(input())
+    print('palabra ingresada:', palabra_2)
+
+    print('Ingrese palabra 3:')
+    palabra_3 = str(input())
+    print('palabra ingresada:', palabra_3)
+
+    if palabra_1 > palabra_2  and palabra_3:
+        print('{} es mayor que {}'.format(palabra_1, palabra_2, palabra_3))
+    else:
+        print('{} es mayor que {}'.format(palabra_2, palabra_1, palabra_3))
+    
+    
+    print('palabra 1:', palabra_1)
+
+    palabra_1_len = len(palabra_1)
+    print(palabra_1, 'tiene', palabra_1_len, 'caracteres')
+
+    palabras_=[palabra_1,palabra_2,palabra_3]
+    palabras_.sort()
+    print (palabras_)
+
 if __name__ == '__main__':
     print("Ejercicios de práctica")
     #ej1()
     #ej2()
     #ej3()
     #ej4()
-    #ej5()
+    ej5()
