@@ -440,8 +440,8 @@ def ej5():
   '''
 
 
-
-print('Ingrese palabra 1: ')
+ 
+    print('Ingrese palabra 1: ')
     palabra_1 = str(input())
     print('palabra ingresada:', palabra_1)
 
